@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		33A005051EA7806600AC9B07 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A005041EA7806600AC9B07 /* Utility.swift */; };
+		33F5FDEB1EA60DF100D9BA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5FDEA1EA60DF100D9BA6B /* AppDelegate.swift */; };
+		33F5FDF01EA60DF100D9BA6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F5FDEE1EA60DF100D9BA6B /* Main.storyboard */; };
+		33F5FDF21EA60DF100D9BA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F5FDF11EA60DF100D9BA6B /* Assets.xcassets */; };
+		33F5FDF51EA60DF100D9BA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F5FDF31EA60DF100D9BA6B /* LaunchScreen.storyboard */; };
+		33F5FE001EA60DF100D9BA6B /* LPSQLiteDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5FDFF1EA60DF100D9BA6B /* LPSQLiteDBTests.swift */; };
+		33F5FE0B1EA60DF100D9BA6B /* LPSQLiteDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5FE0A1EA60DF100D9BA6B /* LPSQLiteDBUITests.swift */; };
+		33F5FE1F1EA612F300D9BA6B /* MyDatabase.db in Resources */ = {isa = PBXBuildFile; fileRef = 33F5FE1C1EA612F300D9BA6B /* MyDatabase.db */; };
+		33F5FE211EA6138700D9BA6B /* LPListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5FE201EA6138700D9BA6B /* LPListViewController.swift */; };
+		33F5FE231EA6139800D9BA6B /* LPAddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5FE221EA6139800D9BA6B /* LPAddEditViewController.swift */; };
+		33F5FE281EA6169900D9BA6B /* LPStudentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5FE271EA6169900D9BA6B /* LPStudentInfo.swift */; };
+		33F5FE2A1EA616BF00D9BA6B /* LPDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5FE291EA616BF00D9BA6B /* LPDBManager.swift */; };
+		33F5FE2D1EA61A4300D9BA6B /* LPTables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5FE2C1EA61A4300D9BA6B /* LPTables.swift */; };
+		33F5FE2F1EA62B0900D9BA6B /* LPConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F5FE2E1EA62B0900D9BA6B /* LPConstants.swift */; };
+		33FB5F231EA75C7400F3D324 /* LPTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FB5F211EA75C7400F3D324 /* LPTextFieldCell.swift */; };
+		33FB5F2C1EA75C8100F3D324 /* AlertMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FB5F251EA75C8100F3D324 /* AlertMessages.swift */; };
+		33FB5F311EA75C8100F3D324 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FB5F2B1EA75C8100F3D324 /* UIViewController.swift */; };
+		4A3509EBDFD15BB9257DDBF7 /* Pods_LPSQLiteDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A69AA9FB0B3670040FE8E3 /* Pods_LPSQLiteDB.framework */; };
+		7250F215D24305E6A2C98037 /* Pods_LPSQLiteDBUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4700FCA251E8CB2E658FE0A2 /* Pods_LPSQLiteDBUITests.framework */; };
+		D290B22800ECC74364141FB8 /* Pods_LPSQLiteDBTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE2BC3EEB52370C2ACB57B05 /* Pods_LPSQLiteDBTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		33F5FDFC1EA60DF100D9BA6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33F5FDDF1EA60DF000D9BA6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33F5FDE61EA60DF000D9BA6B;
+			remoteInfo = LPSQLiteDB;
+		};
+		33F5FE071EA60DF100D9BA6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33F5FDDF1EA60DF000D9BA6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33F5FDE61EA60DF000D9BA6B;
+			remoteInfo = LPSQLiteDB;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26F508ED039C044D8D2AA1B3 /* Pods-LPSQLiteDBTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSQLiteDBTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPSQLiteDBTests/Pods-LPSQLiteDBTests.debug.xcconfig"; sourceTree = "<group>"; };
+		31A69AA9FB0B3670040FE8E3 /* Pods_LPSQLiteDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPSQLiteDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33A005041EA7806600AC9B07 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		33F5FDE71EA60DF100D9BA6B /* LPSQLiteDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LPSQLiteDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F5FDEA1EA60DF100D9BA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		33F5FDEF1EA60DF100D9BA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33F5FDF11EA60DF100D9BA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33F5FDF41EA60DF100D9BA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33F5FDF61EA60DF100D9BA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F5FDFB1EA60DF100D9BA6B /* LPSQLiteDBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPSQLiteDBTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F5FDFF1EA60DF100D9BA6B /* LPSQLiteDBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPSQLiteDBTests.swift; sourceTree = "<group>"; };
+		33F5FE011EA60DF100D9BA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F5FE061EA60DF100D9BA6B /* LPSQLiteDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LPSQLiteDBUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33F5FE0A1EA60DF100D9BA6B /* LPSQLiteDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LPSQLiteDBUITests.swift; sourceTree = "<group>"; };
+		33F5FE0C1EA60DF100D9BA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33F5FE1C1EA612F300D9BA6B /* MyDatabase.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = MyDatabase.db; sourceTree = "<group>"; };
+		33F5FE201EA6138700D9BA6B /* LPListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPListViewController.swift; sourceTree = "<group>"; };
+		33F5FE221EA6139800D9BA6B /* LPAddEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPAddEditViewController.swift; sourceTree = "<group>"; };
+		33F5FE271EA6169900D9BA6B /* LPStudentInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPStudentInfo.swift; sourceTree = "<group>"; };
+		33F5FE291EA616BF00D9BA6B /* LPDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPDBManager.swift; sourceTree = "<group>"; };
+		33F5FE2C1EA61A4300D9BA6B /* LPTables.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPTables.swift; sourceTree = "<group>"; };
+		33F5FE2E1EA62B0900D9BA6B /* LPConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPConstants.swift; sourceTree = "<group>"; };
+		33FB5F211EA75C7400F3D324 /* LPTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LPTextFieldCell.swift; sourceTree = "<group>"; };
+		33FB5F251EA75C8100F3D324 /* AlertMessages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessages.swift; sourceTree = "<group>"; };
+		33FB5F2B1EA75C8100F3D324 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		4700FCA251E8CB2E658FE0A2 /* Pods_LPSQLiteDBUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPSQLiteDBUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76D7947CC1B8817D88E88D34 /* Pods-LPSQLiteDBUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSQLiteDBUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPSQLiteDBUITests/Pods-LPSQLiteDBUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8007C0F6C50761CA7BBF3D71 /* Pods-LPSQLiteDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSQLiteDB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPSQLiteDB/Pods-LPSQLiteDB.debug.xcconfig"; sourceTree = "<group>"; };
+		8FAEDBD53A0CAF29F63EDD8B /* Pods-LPSQLiteDBUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSQLiteDBUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LPSQLiteDBUITests/Pods-LPSQLiteDBUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C91B1528D2C5E3A3C9150F92 /* Pods-LPSQLiteDBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSQLiteDBTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPSQLiteDBTests/Pods-LPSQLiteDBTests.release.xcconfig"; sourceTree = "<group>"; };
+		CE2BC3EEB52370C2ACB57B05 /* Pods_LPSQLiteDBTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LPSQLiteDBTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC436DCC1E42E870D0518B56 /* Pods-LPSQLiteDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LPSQLiteDB.release.xcconfig"; path = "Pods/Target Support Files/Pods-LPSQLiteDB/Pods-LPSQLiteDB.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33F5FDE41EA60DF000D9BA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A3509EBDFD15BB9257DDBF7 /* Pods_LPSQLiteDB.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F5FDF81EA60DF100D9BA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D290B22800ECC74364141FB8 /* Pods_LPSQLiteDBTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F5FE031EA60DF100D9BA6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7250F215D24305E6A2C98037 /* Pods_LPSQLiteDBUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33F5FDDE1EA60DF000D9BA6B = {
+			isa = PBXGroup;
+			children = (
+				33F5FDE91EA60DF100D9BA6B /* LPSQLiteDB */,
+				33F5FDFE1EA60DF100D9BA6B /* LPSQLiteDBTests */,
+				33F5FE091EA60DF100D9BA6B /* LPSQLiteDBUITests */,
+				33F5FDE81EA60DF100D9BA6B /* Products */,
+				552731D5926AC40EE63F6FA8 /* Pods */,
+				E6CE89E6CC42A5FB2186A931 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		33F5FDE81EA60DF100D9BA6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33F5FDE71EA60DF100D9BA6B /* LPSQLiteDB.app */,
+				33F5FDFB1EA60DF100D9BA6B /* LPSQLiteDBTests.xctest */,
+				33F5FE061EA60DF100D9BA6B /* LPSQLiteDBUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33F5FDE91EA60DF100D9BA6B /* LPSQLiteDB */ = {
+			isa = PBXGroup;
+			children = (
+				33F5FE181EA6125500D9BA6B /* Root */,
+				33F5FE1A1EA612F300D9BA6B /* Classes */,
+			);
+			path = LPSQLiteDB;
+			sourceTree = "<group>";
+		};
+		33F5FDFE1EA60DF100D9BA6B /* LPSQLiteDBTests */ = {
+			isa = PBXGroup;
+			children = (
+				33F5FDFF1EA60DF100D9BA6B /* LPSQLiteDBTests.swift */,
+				33F5FE011EA60DF100D9BA6B /* Info.plist */,
+			);
+			path = LPSQLiteDBTests;
+			sourceTree = "<group>";
+		};
+		33F5FE091EA60DF100D9BA6B /* LPSQLiteDBUITests */ = {
+			isa = PBXGroup;
+			children = (
+				33F5FE0A1EA60DF100D9BA6B /* LPSQLiteDBUITests.swift */,
+				33F5FE0C1EA60DF100D9BA6B /* Info.plist */,
+			);
+			path = LPSQLiteDBUITests;
+			sourceTree = "<group>";
+		};
+		33F5FE181EA6125500D9BA6B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				33F5FE2E1EA62B0900D9BA6B /* LPConstants.swift */,
+				33F5FDEA1EA60DF100D9BA6B /* AppDelegate.swift */,
+				33F5FDF11EA60DF100D9BA6B /* Assets.xcassets */,
+				33F5FDF61EA60DF100D9BA6B /* Info.plist */,
+				33F5FE191EA6126400D9BA6B /* Storyboard */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		33F5FE191EA6126400D9BA6B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				33F5FDEE1EA60DF100D9BA6B /* Main.storyboard */,
+				33F5FDF31EA60DF100D9BA6B /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		33F5FE1A1EA612F300D9BA6B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				33FB5F321EA7802C00F3D324 /* Utility */,
+				33FB5F241EA75C8100F3D324 /* Common */,
+				33FB5F261EA75C8100F3D324 /* Extension */,
+				33F5FE2B1EA61A3600D9BA6B /* Structures */,
+				33F5FE1E1EA612F300D9BA6B /* ViewControllers */,
+				33F5FE261EA6167A00D9BA6B /* Models */,
+				33F5FE1D1EA612F300D9BA6B /* UIControls */,
+				33F5FE1B1EA612F300D9BA6B /* Database */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		33F5FE1B1EA612F300D9BA6B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				33F5FE291EA616BF00D9BA6B /* LPDBManager.swift */,
+				33F5FE1C1EA612F300D9BA6B /* MyDatabase.db */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		33F5FE1D1EA612F300D9BA6B /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				33FB5F201EA75C7400F3D324 /* LPTableViewCell */,
+			);
+			path = UIControls;
+			sourceTree = "<group>";
+		};
+		33F5FE1E1EA612F300D9BA6B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				33F5FE201EA6138700D9BA6B /* LPListViewController.swift */,
+				33F5FE221EA6139800D9BA6B /* LPAddEditViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		33F5FE261EA6167A00D9BA6B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33F5FE271EA6169900D9BA6B /* LPStudentInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		33F5FE2B1EA61A3600D9BA6B /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				33F5FE2C1EA61A4300D9BA6B /* LPTables.swift */,
+			);
+			path = Structures;
+			sourceTree = "<group>";
+		};
+		33FB5F201EA75C7400F3D324 /* LPTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				33FB5F211EA75C7400F3D324 /* LPTextFieldCell.swift */,
+			);
+			path = LPTableViewCell;
+			sourceTree = "<group>";
+		};
+		33FB5F241EA75C8100F3D324 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				33FB5F251EA75C8100F3D324 /* AlertMessages.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		33FB5F261EA75C8100F3D324 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				33FB5F2B1EA75C8100F3D324 /* UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		33FB5F321EA7802C00F3D324 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				33A005041EA7806600AC9B07 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		552731D5926AC40EE63F6FA8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8007C0F6C50761CA7BBF3D71 /* Pods-LPSQLiteDB.debug.xcconfig */,
+				EC436DCC1E42E870D0518B56 /* Pods-LPSQLiteDB.release.xcconfig */,
+				26F508ED039C044D8D2AA1B3 /* Pods-LPSQLiteDBTests.debug.xcconfig */,
+				C91B1528D2C5E3A3C9150F92 /* Pods-LPSQLiteDBTests.release.xcconfig */,
+				8FAEDBD53A0CAF29F63EDD8B /* Pods-LPSQLiteDBUITests.debug.xcconfig */,
+				76D7947CC1B8817D88E88D34 /* Pods-LPSQLiteDBUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E6CE89E6CC42A5FB2186A931 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31A69AA9FB0B3670040FE8E3 /* Pods_LPSQLiteDB.framework */,
+				CE2BC3EEB52370C2ACB57B05 /* Pods_LPSQLiteDBTests.framework */,
+				4700FCA251E8CB2E658FE0A2 /* Pods_LPSQLiteDBUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33F5FDE61EA60DF000D9BA6B /* LPSQLiteDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F5FE0F1EA60DF100D9BA6B /* Build configuration list for PBXNativeTarget "LPSQLiteDB" */;
+			buildPhases = (
+				503BF959A74F9EBD0591137C /* [CP] Check Pods Manifest.lock */,
+				33F5FDE31EA60DF000D9BA6B /* Sources */,
+				33F5FDE41EA60DF000D9BA6B /* Frameworks */,
+				33F5FDE51EA60DF000D9BA6B /* Resources */,
+				BA8DF6666562B5BC00DE07EF /* [CP] Embed Pods Frameworks */,
+				B978C67459C37CE1EDEE3576 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPSQLiteDB;
+			productName = LPSQLiteDB;
+			productReference = 33F5FDE71EA60DF100D9BA6B /* LPSQLiteDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+		33F5FDFA1EA60DF100D9BA6B /* LPSQLiteDBTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F5FE121EA60DF100D9BA6B /* Build configuration list for PBXNativeTarget "LPSQLiteDBTests" */;
+			buildPhases = (
+				4EAEDEBE8AFB4175FCCFC052 /* [CP] Check Pods Manifest.lock */,
+				33F5FDF71EA60DF100D9BA6B /* Sources */,
+				33F5FDF81EA60DF100D9BA6B /* Frameworks */,
+				33F5FDF91EA60DF100D9BA6B /* Resources */,
+				0441A0A9C1EE0018DB34313E /* [CP] Embed Pods Frameworks */,
+				ECAD68EB2B441A378C070D61 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33F5FDFD1EA60DF100D9BA6B /* PBXTargetDependency */,
+			);
+			name = LPSQLiteDBTests;
+			productName = LPSQLiteDBTests;
+			productReference = 33F5FDFB1EA60DF100D9BA6B /* LPSQLiteDBTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33F5FE051EA60DF100D9BA6B /* LPSQLiteDBUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33F5FE151EA60DF100D9BA6B /* Build configuration list for PBXNativeTarget "LPSQLiteDBUITests" */;
+			buildPhases = (
+				3825B06E5C44CD16E9DEDD40 /* [CP] Check Pods Manifest.lock */,
+				33F5FE021EA60DF100D9BA6B /* Sources */,
+				33F5FE031EA60DF100D9BA6B /* Frameworks */,
+				33F5FE041EA60DF100D9BA6B /* Resources */,
+				F42EA805DCD3C92FBF3360A3 /* [CP] Embed Pods Frameworks */,
+				86444ACBD04FE77BD8EBA2F5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33F5FE081EA60DF100D9BA6B /* PBXTargetDependency */,
+			);
+			name = LPSQLiteDBUITests;
+			productName = LPSQLiteDBUITests;
+			productReference = 33F5FE061EA60DF100D9BA6B /* LPSQLiteDBUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33F5FDDF1EA60DF000D9BA6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Lomesh Pansuriya";
+				TargetAttributes = {
+					33F5FDE61EA60DF000D9BA6B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					33F5FDFA1EA60DF100D9BA6B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33F5FDE61EA60DF000D9BA6B;
+					};
+					33F5FE051EA60DF100D9BA6B = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 33F5FDE61EA60DF000D9BA6B;
+					};
+				};
+			};
+			buildConfigurationList = 33F5FDE21EA60DF000D9BA6B /* Build configuration list for PBXProject "LPSQLiteDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 33F5FDDE1EA60DF000D9BA6B;
+			productRefGroup = 33F5FDE81EA60DF100D9BA6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33F5FDE61EA60DF000D9BA6B /* LPSQLiteDB */,
+				33F5FDFA1EA60DF100D9BA6B /* LPSQLiteDBTests */,
+				33F5FE051EA60DF100D9BA6B /* LPSQLiteDBUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33F5FDE51EA60DF000D9BA6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F5FE1F1EA612F300D9BA6B /* MyDatabase.db in Resources */,
+				33F5FDF51EA60DF100D9BA6B /* LaunchScreen.storyboard in Resources */,
+				33F5FDF21EA60DF100D9BA6B /* Assets.xcassets in Resources */,
+				33F5FDF01EA60DF100D9BA6B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F5FDF91EA60DF100D9BA6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F5FE041EA60DF100D9BA6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0441A0A9C1EE0018DB34313E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPSQLiteDBTests/Pods-LPSQLiteDBTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3825B06E5C44CD16E9DEDD40 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4EAEDEBE8AFB4175FCCFC052 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		503BF959A74F9EBD0591137C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86444ACBD04FE77BD8EBA2F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPSQLiteDBUITests/Pods-LPSQLiteDBUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B978C67459C37CE1EDEE3576 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPSQLiteDB/Pods-LPSQLiteDB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8DF6666562B5BC00DE07EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPSQLiteDB/Pods-LPSQLiteDB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECAD68EB2B441A378C070D61 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPSQLiteDBTests/Pods-LPSQLiteDBTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F42EA805DCD3C92FBF3360A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LPSQLiteDBUITests/Pods-LPSQLiteDBUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33F5FDE31EA60DF000D9BA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33A005051EA7806600AC9B07 /* Utility.swift in Sources */,
+				33F5FE211EA6138700D9BA6B /* LPListViewController.swift in Sources */,
+				33F5FE2A1EA616BF00D9BA6B /* LPDBManager.swift in Sources */,
+				33FB5F231EA75C7400F3D324 /* LPTextFieldCell.swift in Sources */,
+				33FB5F2C1EA75C8100F3D324 /* AlertMessages.swift in Sources */,
+				33F5FE231EA6139800D9BA6B /* LPAddEditViewController.swift in Sources */,
+				33F5FE281EA6169900D9BA6B /* LPStudentInfo.swift in Sources */,
+				33F5FE2F1EA62B0900D9BA6B /* LPConstants.swift in Sources */,
+				33F5FDEB1EA60DF100D9BA6B /* AppDelegate.swift in Sources */,
+				33F5FE2D1EA61A4300D9BA6B /* LPTables.swift in Sources */,
+				33FB5F311EA75C8100F3D324 /* UIViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F5FDF71EA60DF100D9BA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F5FE001EA60DF100D9BA6B /* LPSQLiteDBTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F5FE021EA60DF100D9BA6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33F5FE0B1EA60DF100D9BA6B /* LPSQLiteDBUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33F5FDFD1EA60DF100D9BA6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33F5FDE61EA60DF000D9BA6B /* LPSQLiteDB */;
+			targetProxy = 33F5FDFC1EA60DF100D9BA6B /* PBXContainerItemProxy */;
+		};
+		33F5FE081EA60DF100D9BA6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33F5FDE61EA60DF000D9BA6B /* LPSQLiteDB */;
+			targetProxy = 33F5FE071EA60DF100D9BA6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		33F5FDEE1EA60DF100D9BA6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33F5FDEF1EA60DF100D9BA6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33F5FDF31EA60DF100D9BA6B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33F5FDF41EA60DF100D9BA6B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		33F5FE0D1EA60DF100D9BA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33F5FE0E1EA60DF100D9BA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33F5FE101EA60DF100D9BA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8007C0F6C50761CA7BBF3D71 /* Pods-LPSQLiteDB.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LPSQLiteDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPTech.LPSQLiteDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		33F5FE111EA60DF100D9BA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC436DCC1E42E870D0518B56 /* Pods-LPSQLiteDB.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LPSQLiteDB/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPTech.LPSQLiteDB;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		33F5FE131EA60DF100D9BA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F508ED039C044D8D2AA1B3 /* Pods-LPSQLiteDBTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LPSQLiteDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPTech.LPSQLiteDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LPSQLiteDB.app/LPSQLiteDB";
+			};
+			name = Debug;
+		};
+		33F5FE141EA60DF100D9BA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91B1528D2C5E3A3C9150F92 /* Pods-LPSQLiteDBTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LPSQLiteDBTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPTech.LPSQLiteDBTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LPSQLiteDB.app/LPSQLiteDB";
+			};
+			name = Release;
+		};
+		33F5FE161EA60DF100D9BA6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FAEDBD53A0CAF29F63EDD8B /* Pods-LPSQLiteDBUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LPSQLiteDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPTech.LPSQLiteDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LPSQLiteDB;
+			};
+			name = Debug;
+		};
+		33F5FE171EA60DF100D9BA6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76D7947CC1B8817D88E88D34 /* Pods-LPSQLiteDBUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = LPSQLiteDBUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = LPTech.LPSQLiteDBUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = LPSQLiteDB;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33F5FDE21EA60DF000D9BA6B /* Build configuration list for PBXProject "LPSQLiteDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F5FE0D1EA60DF100D9BA6B /* Debug */,
+				33F5FE0E1EA60DF100D9BA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33F5FE0F1EA60DF100D9BA6B /* Build configuration list for PBXNativeTarget "LPSQLiteDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F5FE101EA60DF100D9BA6B /* Debug */,
+				33F5FE111EA60DF100D9BA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33F5FE121EA60DF100D9BA6B /* Build configuration list for PBXNativeTarget "LPSQLiteDBTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F5FE131EA60DF100D9BA6B /* Debug */,
+				33F5FE141EA60DF100D9BA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33F5FE151EA60DF100D9BA6B /* Build configuration list for PBXNativeTarget "LPSQLiteDBUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33F5FE161EA60DF100D9BA6B /* Debug */,
+				33F5FE171EA60DF100D9BA6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33F5FDDF1EA60DF000D9BA6B /* Project object */;
+}
